@@ -36,7 +36,7 @@ We recommend inference and training in cuda because DCN libraries do not run wel
 # DNFusion
 <img src="docs/overview.png" width="934" height="294">
 
-Our proposed UNIFusion is an autoencoder structure, which consists of image decomposition, feature extraction, fusion, and reconstruction modules. The~feature extraction module is a three-branch network based on dense attention, consisting of encoders E_ir, E_vi, and E_u_, which are used to extract unique and unified features. 
+Our proposed UNIFusion is an autoencoder structure, which consists of image decomposition, feature extraction, fusion, and reconstruction modules. The feature extraction module is a three-branch network based on dense attention, consisting of encoders E_ir, E_vi, and E_u_, which are used to extract unique and unified features. 
 
 <img src="docs/ufs.png" width="934" height="346">
 
@@ -44,13 +44,12 @@ The fusion and reconstruction module is devised to fuse features and generate fu
 
 <img src="docs/dec.png" width="693" height="451">
 
-Specifically, we decompose infrared--visible images into common regions (C_vi and C_ir) and unique regions (P_vi and P_ir). The~dense attention is leveraged to effectively extract features from the common and unique regions. 
-
-<img src="docs/dec.png" width="693" height="451">
-
-To eliminate modal differences, we propose the unified feature space to transform infrared features into the pseudo-visible domain. As noisy source images may degrade the fusion quality, we design a non-local Gaussian filter to minimize the impact of noise on the fusion results while maintaining the image~details.
+Specifically, we decompose infrared--visible images into common regions (C_vi and C_ir) and unique regions (P_vi and P_ir). The dense attention is leveraged to effectively extract features from the common and unique regions. 
 
 <img src="docs/nlgs.png" width="491" height="207">
+
+To eliminate modal differences, we propose the unified feature space to transform infrared features into the pseudo-visible domain. As noisy source images may degrade the fusion quality, we design a non-local Gaussian filter to minimize the impact of noise on the fusion results while maintaining the image details.
+
 
 # Fusion Results
 <img src="docs/fu1.png" width="800">
