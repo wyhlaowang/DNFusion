@@ -19,7 +19,6 @@ conda create -n LDFusion python=3.9.12
 conda activate LDFusion
 
 # select pytorch version yourself (recommended torch 1.8.2)
-# install DDFM requirements
 pip install -r requirements.txt
 ```
 
