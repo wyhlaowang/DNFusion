@@ -15,8 +15,8 @@ Code for DNFuison: Infrared-Visible Image Fusion through Feature-Based Decomposi
 Recommended cuda11.1
 
 # create conda environment
-conda create -n LDFusion python=3.9.12
-conda activate LDFusion
+conda create -n DNFusion python=3.9.12
+conda activate DNFusion
 
 # select pytorch version yourself (recommended torch 1.8.2)
 pip install -r requirements.txt
